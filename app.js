@@ -122,7 +122,7 @@ function createUI() {
 
         <h1>QR Bouncer</h1>
 
-        <p>Get your very own <a href="https://www.youtube.com/watch?v=eIUD_NE1BDo" target="_blank">bouncing QR code</a>.</p>
+        <p>Generate your own <a href="https://www.youtube.com/watch?v=eIUD_NE1BDo" target="_blank">bouncing QR code</a>.</p>
 
         <hr/>
 
