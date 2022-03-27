@@ -129,7 +129,7 @@ function createUI() {
         <div class="form-well">
           <form>
             <label>QR code content</label>
-            <input type="text" name="q" placeholder="Enter your URL"></input>
+            <input type="text" name="q" placeholder="Enter a URL"></input>
             <input class="btn" type="submit" value="Get your QR code" />
           </form>
         </div>
