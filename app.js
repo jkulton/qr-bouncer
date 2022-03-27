@@ -74,7 +74,7 @@ function UserInterface() {
   }
 
   function parseURL(string) {
-    if (!string.startsWith("https://") || !string.startsWith("http://")) {
+    if (!string.startsWith("https://") && !string.startsWith("http://")) {
       string = "https://" + string;
     }
 
