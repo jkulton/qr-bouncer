@@ -1,4 +1,4 @@
-![logo](qr-bouncer.png)
+<img src="qr-bouncer.png" width=100 />
 
 # QR Bouncer
 
