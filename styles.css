@@ -80,6 +80,9 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .copy-button {
