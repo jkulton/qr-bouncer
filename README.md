@@ -1,4 +1,4 @@
-<img src="qr-bouncer.png" width=100 />
+<img src="/assets/qr-bouncer.png" width=100 />
 
 # QR Bouncer
 
