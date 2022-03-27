@@ -73,6 +73,19 @@ function UserInterface() {
     }
   }
 
+  function parseURL(string) {
+    if (!string.startsWith("https://") || !string.startsWith("http://")) {
+      string = "https://" + string;
+    }
+
+    try {
+      const url = new URL(string);
+      return url.href;
+    } catch (error) {
+      return false;
+    }
+  }
+
   function renderSuccess(url) {
     const success = `
       <div class="form-success">
@@ -101,11 +114,22 @@ function UserInterface() {
       .addEventListener('click', () => handleCopy(url));
   }
 
+  function showFormError(message) {
+    document.querySelector('.form-error').innerText = message;
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.target);
     const form = Object.fromEntries(formData);
-    const q = textToBase64(form.q);
+    const parsedURL = parseURL(form.q);
+
+    if (!parsedURL) {
+      showFormError("That URL isn't valid.");
+      return;
+    }
+
+    const q = textToBase64(parsedURL);
     const url = `${window.location.origin}?s=${q}`;
     window.location = url;
   }
@@ -133,6 +157,7 @@ function UserInterface() {
           <form>
             <label>QR code content</label>
             <input type="text" name="q" placeholder="Enter a URL" autofocus></input>
+            <label class="form-status form-error"></label>
             <input class="btn" type="submit" value="Get your QR code" />
           </form>
         </div>
