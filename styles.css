@@ -141,3 +141,13 @@ label {
   color:  #999;
   margin: 0;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 32px;
+  }
+
+  .form-wrapper {
+    margin: 0 auto 64px auto;
+  }
+}
