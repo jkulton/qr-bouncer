@@ -166,7 +166,7 @@ function UserInterface() {
 
         <hr/>
 
-        <p class="text-faint">A project by <a href="https://twitter.com/jkulton">@jkulton</a></p>
+        <p class="text-faint">A project by <a href="https://twitter.com/jkulton">@jkulton</a>. Code on <a href="https://github.com/jkulton/qr-bouncer">GitHub</a>.</p>
       </div>
 
       <br/>
