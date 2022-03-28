@@ -157,7 +157,6 @@ function UserInterface() {
 
         <div class="form-well">
           <form>
-            <label>QR code content</label>
             <input type="text" name="q" placeholder="Enter a URL" autofocus></input>
             <label class="form-status form-error"></label>
             <input class="btn" type="submit" value="Get your QR code" />
